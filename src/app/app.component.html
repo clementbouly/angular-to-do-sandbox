@@ -1,0 +1,8 @@
+<div class="app__container">
+  <h1 class="app__title">To do list</h1>
+  <ul class="tasks__list">
+    <li *ngFor="let task of tasks" class="tasks__item">{{task.label}}</li>
+  </ul>
+  <button (click)="addTask()">Add Task</button>
+</div>
+<router-outlet></router-outlet>
